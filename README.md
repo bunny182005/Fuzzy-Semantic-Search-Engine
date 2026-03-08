@@ -47,33 +47,33 @@ By combining **Fuzzy C-Means clustering** (allowing documents to exist in multip
 ##🚀 Quick Start Guide
 
 ## 1. Prerequisites & Installation
-* **Ensure you have Python 3.9+ installed. Clone the repository and set up your virtual environment:
+Ensure you have Python 3.9+ installed. Clone the repository and set up your virtual environment:
 
 Bash
-* **git clone (https://github.com/bunny182005/Fuzzy-Semantic-Search-Engine.git)
-* **cd Fuzzy-Semantic-Search-Engine
+* git clone (https://github.com/bunny182005/Fuzzy-Semantic-Search-Engine.git)
+* cd Fuzzy-Semantic-Search-Engine
 
-* **python -m venv venv
-* **source venv/bin/activate  # On Windows: venv\Scripts\activate
+* python -m venv venv
+* source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-* **pip install -r requirements.txt
+* pip install -r requirements.txt
 #2. Initialize the Data Pipeline
-* **Run the setup script from the root directory. This downloads the 20 Newsgroups dataset, cleans the text, generates vector embeddings, trains the fuzzy clustering model, and saves the system state locally.
+Run the setup script from the root directory. This downloads the 20 Newsgroups dataset, cleans the text, generates vector embeddings, trains the fuzzy clustering model, and saves the system state locally.
 
-* **Bash
-* **python setup.py
+  Bash
+* python setup.py
 (Note: Grab a coffee! This step takes a few minutes as it encodes 20,000 documents into the local vector database).
 
 #3. Start the Backend API
-* **Launch the FastAPI server. Run this from the root directory, pointing Uvicorn to the src folder:
+*Launch the FastAPI server. Run this from the root directory, pointing Uvicorn to the src folder:
 
-* **Bash
-* **uvicorn main:app --app-dir src --host 0.0.0.0 --port 8000
-* **Interactive API Documentation is available at: http://localhost:8000/docs
+* Bash
+* uvicorn main:app --app-dir src --host 0.0.0.0 --port 8000
+* Interactive API Documentation is available at: http://localhost:8000/docs
 
 #4. Start the Web UI
-* **Open a new terminal, activate your virtual environment, and launch the Streamlit app:
+Open a new terminal, activate your virtual environment, and launch the Streamlit app:
 
-* **Bash
-****streamlit run app.py
-* **The UI will automatically open in your browser at http://localhost:8501.
+* Bash
+*streamlit run app.py
+The UI will automatically open in your browser at http://localhost:8501.
