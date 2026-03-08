@@ -41,13 +41,17 @@ By combining **Fuzzy C-Means clustering** (allowing documents to exist in multip
 ├── test_api.py             # Automated API test suite
 ├── requirements.txt        # Python dependencies
 └── README.md
-🚀 Quick Start Guide
+```
+
+
+##🚀 Quick Start Guide
+
 1. Prerequisites & Installation
 Ensure you have Python 3.9+ installed. Clone the repository and set up your virtual environment:
 
 Bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-cd YOUR_REPO_NAME
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/bunny182005/Fuzzy-Semantic-Search-Engine.git)
+cd Fuzzy-Semantic-Search-Engine
 
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
